@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.column__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about__title {
+  color: #fbe573;
+  font-family: "Playfair Display";
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+}
+
+.about__para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.directions {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
