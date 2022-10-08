@@ -1,0 +1,84 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.location__img--wrapper {
+  width: 80%;
+  margin: 40px 0;
+}
+
+.location__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact__information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.number__container,
+.address__container,
+.hours__container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+  padding-left: 132px;
+}
+
+.number__container > h3,
+.address__container > h3,
+.hours__container > h3 {
+  font-size: 16px;
+}
+
+.number__container > h4,
+.address__container > h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.call__btn,
+.directions__btn {
+  color: #242424 !important;
+  font-family: "Oswald" !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  border-radius: 4px !important;
+  background-color: #fbe573 !important;
+  padding: 0 12px !important;
+  transition: all 300ms ease-in-out !important;
+  width: 40%;
+  margin: 12px 0 !important;
+}
+
+.directions__link {
+  text-decoration: none;
+}
+
+.directions__btn {
+  width: 60%;
+}
+
+.call__btn:hover,
+.directions__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 4px 3px rgba(251, 229, 115, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.call__btn:active,
+.directions__btn:active {
+  transform: scale(0.85);
+  transition: all 300ms ease-in-out;
+}

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 120px;
 }
 
 .column__about {
@@ -20,6 +20,8 @@
   font-size: 48px;
   font-weight: 900;
   letter-spacing: 0.5rem;
+  text-shadow: -1px 1px 0 #5c4033, 1px 1px 0 #5c4033, 1px -1px 0 #5c4033,
+    -1px -1px 0 #5c4033;
 }
 
 .about__para {

@@ -3,8 +3,11 @@
   align-items: center;
   justify-content: center;
   background-color: #242424;
-  position: sticky;
+  position: fixed;
   box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-height: 100px;
+  top: 0;
 }
 
 .row__nav {
@@ -26,7 +29,7 @@
 
 .nav__link--wrapper {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   transition: all 300ms ease-in-out;
   border-radius: 9999px;
@@ -46,6 +49,159 @@
 }
 
 .nav__link--wrapper:active {
+  transform: scale(0.85);
+  transition: all 300ms ease-in-out;
+}
+
+.radio__btn--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.radio__btn--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.review__btn {
+  color: #242424 !important;
+  font-family: "Oswald" !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  border-radius: 4px !important;
+  background-color: #fbe573 !important;
+  padding: 0 12px !important;
+  transition: all 300ms ease-in-out !important;
+  margin-left: 20px !important;
+}
+
+.review__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 4px 3px rgba(251, 229, 115, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.review__btn:active {
+  transform: scale(0.85);
+  transition: all 300ms ease-in-out;
+}
+
+.review__container {
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  top: 20%;
+  width: 550px;
+  height: 450px;
+  background-color: #242424;
+  border-radius: 8px;
+  z-index: 100;
+  padding: 24px;
+  box-shadow: -3px 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.close__icon {
+  position: absolute;
+  margin: 20px 24px;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+.close__icon:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #fbe573;
+  transition: all 300ms ease-in-out;
+}
+
+.close__icon:active {
+  transform: scale(0.85);
+}
+
+.review__wrapper {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  color: white;
+}
+
+.review__wrapper > h3:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+.review__wrapper > h3:not(:first-child),
+.review__wrapper > h3:not(:last-child) {
+  padding-top: 12px;
+}
+
+.review__name,
+.review__rating,
+.review__message {
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  border-bottom: 3px solid #fbe573;
+  color: black;
+  background-color: #242424;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.review__name,
+.review__message {
+  background-color: white;
+  padding-left: 4px;
+  padding-top: 6px;
+  border-radius: 10px;
+}
+
+.review__message {
+  height: 100px;
+  max-height: 100px;
+  resize: none;
+}
+
+.review__name:focus,
+.review__rating:focus,
+.review__message:focus {
+  outline: none;
+  border-bottom: 3px solid #d5b306;
+}
+
+.submit__btn {
+  width: 30%;
+  color: #242424 !important;
+  font-family: "Oswald" !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  border-radius: 4px !important;
+  background-color: #fbe573 !important;
+  padding: 0 12px !important;
+  transition: all 300ms ease-in-out !important;
+  margin-left: 20px !important;
+  margin-top: 20px !important;
+}
+
+.submit__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 4px 3px rgba(251, 229, 115, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.submit__btn:active {
   transform: scale(0.85);
   transition: all 300ms ease-in-out;
 }

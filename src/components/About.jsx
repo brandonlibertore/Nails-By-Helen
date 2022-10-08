@@ -17,6 +17,7 @@ export default function About() {
           </a>
           Open Today until 6:00pm
         </p>
+        <img src="" alt="Home Image" />
       </div>
     </div>
   );

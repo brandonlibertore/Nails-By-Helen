@@ -1,0 +1,45 @@
+.testimony {
+  width: calc(60% / 3);
+  border-radius: 4px;
+  padding: 4px;
+  margin: 0 12px;
+  box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  color: #242424;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.testimony:hover {
+  transform: scale(1.05);
+}
+
+.testimony:active {
+  transform: scale(0.85);
+}
+
+.testimony__name,
+.testimony__message,
+.testimony__rating {
+  width: 100%;
+}
+
+.testimony__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.testimony__message {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.star__icon {
+  color: gold;
+}
