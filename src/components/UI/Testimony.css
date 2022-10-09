@@ -1,5 +1,7 @@
 .testimony {
-  width: calc(60% / 3);
+  width: 100%;
+  min-width: calc(60% / 3);
+  max-width: calc(60% / 3);
   border-radius: 4px;
   padding: 4px;
   margin: 0 12px;
@@ -42,4 +44,8 @@
 
 .star__icon {
   color: gold;
+}
+
+.disabled {
+  pointer-events: none;
 }

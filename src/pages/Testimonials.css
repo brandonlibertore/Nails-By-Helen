@@ -1,0 +1,24 @@
+.page__testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 48px;
+}
+
+.testimony {
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.page__testimony__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100%);
+  flex-wrap: wrap;
+}

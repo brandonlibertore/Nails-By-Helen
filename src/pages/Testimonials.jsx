@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase/init";
 import { collection, onSnapshot } from "firebase/firestore";
-import Header from "./UI/Header";
-import Testimony from "./UI/Testimony";
+import Header from "../components/UI/Header";
+import Testimony from "../components/UI/Testimony";
+import Navbar from "../components/Navbar";
 import "./Testimonials.css";
 
 export default function Testimonials() {
@@ -25,21 +26,19 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="testimonials">
-      <Header title="Highlighted Testimonials" />
-      <div className="testimony__container">
-        {reviews
-          .filter((review) => review.rating === 5)
-          .slice(0, 3)
-          .map((object) => (
-            <Testimony
-              key={object.id}
-              id={object.id}
-              name={object.name}
-              message={object.message}
-              rating={object.rating}
-            />
-          ))}
+    <div className="page__testimonials">
+      <Navbar />
+      <Header title="Testimonials" />
+      <div className="page__testimony__container">
+        {reviews.map((object) => (
+          <Testimony
+            key={object.id}
+            id={object.id}
+            name={object.name}
+            message={object.message}
+            rating={object.rating}
+          />
+        ))}
       </div>
     </div>
   );

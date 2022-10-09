@@ -12,12 +12,13 @@ export default function About() {
             href="https://www.google.com/maps/place/11140+Jefferson+Blvd,+Culver+City,+CA+90230/data=!4m2!3m1!1s0x80c2ba021222b883:0xb3206ba94778e813?sa=X&ved=2ahUKEwjgtsiP_sz6AhWfLkQIHbHTCswQ8gF6BAgIEAE"
             className="directions"
             target="_blank"
+            rel="noreferrer"
           >
             11140 Jefferson Blvd Culver City, California 90230
           </a>
-          Open Today until 6:00pm
+          Open to Appointments Only
         </p>
-        <img src="" alt="Home Image" />
+        <img src="" alt="" />
       </div>
     </div>
   );

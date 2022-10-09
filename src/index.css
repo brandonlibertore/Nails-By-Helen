@@ -7,6 +7,10 @@
   font-family: "Oswald";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff9e9;
 }
