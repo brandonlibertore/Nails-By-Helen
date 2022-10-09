@@ -4,6 +4,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import Header from "../components/UI/Header";
 import Testimony from "../components/UI/Testimony";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Testimonials.css";
 
 export default function Testimonials() {
@@ -26,20 +27,23 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="page__testimonials">
+    <>
       <Navbar />
-      <Header title="Testimonials" />
-      <div className="page__testimony__container">
-        {reviews.map((object) => (
-          <Testimony
-            key={object.id}
-            id={object.id}
-            name={object.name}
-            message={object.message}
-            rating={object.rating}
-          />
-        ))}
+      <div className="page__testimonials">
+        <Header title="Testimonials" />
+        <div className="page__testimony__container">
+          {reviews.map((object) => (
+            <Testimony
+              key={object.id}
+              id={object.id}
+              name={object.name}
+              message={object.message}
+              rating={object.rating}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

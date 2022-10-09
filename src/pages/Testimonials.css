@@ -3,22 +3,23 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1200px;
   width: 100%;
+  height: 80vh;
   padding-top: 48px;
 }
 
 .testimony {
   min-width: 200px;
-  min-height: 200px;
+  min-height: 150px;
   max-width: 200px;
-  max-height: 200px;
+  max-height: 150px;
 }
 
 .page__testimony__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100%);
+  width: 100%;
   flex-wrap: wrap;
+  max-width: 1200px;
 }
